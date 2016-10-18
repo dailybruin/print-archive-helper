@@ -1,4 +1,5 @@
 <html>
-    <p>Hi there!</p>
-    <p>It works!</p>
+{% for pdf in pdfs %}
+    <li>{{ pdf.url }}</li>
+{% endfor %}
 </html>
