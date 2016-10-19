@@ -25,7 +25,7 @@ SECRET_KEY = 'x(sxo3-j-#ebwd!@l1m5tdc*441$kj-(kw8^c6milk8wsptn#1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['printarchivehelper.herokuapp.com']
 
 
 # Application definition
@@ -125,5 +125,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
