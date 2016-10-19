@@ -1,1 +1,1 @@
-web: gunicorn gettingstared.wsgi --log-file -
+web: gunicorn data_app.wsgi --log-file -
