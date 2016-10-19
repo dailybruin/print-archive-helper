@@ -8,6 +8,7 @@ class Pdf(models.Model):
 	date_1_page_date = models.DateField(blank=True, null=True)
 	date_2_page_num = models.PositiveSmallIntegerField(default=0)
 	date_2_page_date = models.DateField(blank=True, null=True)
+	ignore = models.BooleanField(default=False)
 	checked = models.BooleanField(default=False)
 
 
