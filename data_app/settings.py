@@ -79,7 +79,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['*']
 
-DEBUG = False
+DEBUG = os.environ.get('DEBUG', False)
 
 try:
     from .local_settings import *
