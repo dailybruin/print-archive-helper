@@ -19,7 +19,11 @@ Next, setup a virtual environment. Follow the instructions on this page if you n
 
 Activate your virtual environment and then run "pip -r requirements.txt". 
 
-To populate the database, run "python manage.py loaddata fixtures/reel1.json --settings=data_collection.data_app.local_settings". 
+Open psql and run "CREATE DATABASE pdf_info"
+Run "python manage.py makemigrations --settings=data_collection.data_app.local_settings" and
+run "python manage.py migrate --settings=data_collection.data_app.local_settings"
+
+To populate the database, run "python manage.py loaddata reel1.json --settings=data_collection.data_app.local_settings". 
 
 In your terminal, navigate to the directory that has the "manage.py" file, then run "python manage.py runserver --settings=data_collection.data_app.local_settings". 
 
