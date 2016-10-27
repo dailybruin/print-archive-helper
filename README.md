@@ -5,3 +5,5 @@ helper site is to allow as many people as possible to contribute to the manual i
 
 GOALS:
 The site will display a pdf page, the user will input the date he/she sees on the page, submit it, and it will be added to the database in real time. The site will keep showing images until the user clicks "I'm done!", or something along those lines. 
+
+There should be a count that display how many pages are left! 
