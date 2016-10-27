@@ -17,7 +17,7 @@ Download PostgreSQL 9.5.4. If you have a Mac, you can use this, it's super easy 
 
 Next, setup a virtual environment. Follow the instructions on this page if you need help. https://tutorial.djangogirls.org/en/django_installation/
 
-Activate your virtual environment and then run "pip -r requirements.txt". 
+Activate your virtual environment and then run "pip install -r requirements.txt". 
 
 Open psql and run "CREATE DATABASE pdf_info"
 Run "python manage.py makemigrations --settings=data_collection.data_app.local_settings" and
